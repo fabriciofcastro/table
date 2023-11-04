@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github favorites</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <script type="module" src="./js/index.js" defer></script>
 </head>
+
 <body>
     <div id="app">
-       <header>
-        <h1>GITHUB FAVORITES </h1>
-        <div>
-            <label for="inputSearch">Usuários do Github</label>
-            <input type="text " id="inputSearch" placeholder="Usuários do github">
-        </div>
-       </header>
+        <header>
+            <h1>GITHUB FAVORITES </h1>
+            <div class="search">
+                <label class="sr-only" for="inputSearch">Usuários do Github</label>
+                <input type="text " id="inputSearch" placeholder="Usuários do github">
+                <button class="remove" type="submit">&plus;</button>
+            </div>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Repositorio</th>
+                        <th>Seguidores</th>
+                        <th></th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td class="user">
+                            <img src="https://github.com/fabriciofcastro.png" alt="Imagem do Usuários" />
+                            <a href="https://github.com/fabriciofcastro"></a>4
+                            <span>Fabrício Castro</span>
+                        </td>
+                        <td class="repositories">76</td>
+                        <td class="followers">998</td>
+                        <td>
+                            <button class="remove">&times;</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
 
     </div>
 
 
 
 </body>
+
 </html>
