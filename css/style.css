@@ -69,7 +69,7 @@ table th:last-child {
     border-top-right-radius: .4rem;
 }
 
-table td {
+table {
     padding: 1,5rem;
     text-align: left;
     
@@ -100,6 +100,9 @@ td.user a p {
 td .remove {
     background: none;
     border: none;
+    color: red;
+
+    cursor: pointer;
 }
 
 table tr:nth-child(odd){
